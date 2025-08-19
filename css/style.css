@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+#contenedor-cv{
+    display: grid;
+    grid-template-columns: 400px 500px;
+    max-width: 1000px;
+    margin: 16px auto;
+    background-color: #fff;
+    border: 2px solid #2c3e50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+    min-height: 100vh;
+}
+
+#barra-lateral{
+    background-color: #2c3e50;
+    color: white;
+    padding: 32px 48px;
+    border-right: 32px solid #2c3e50;
+}
+
+.perfil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.perfil h1{
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+#barra-lateral h2{
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    margin: 32px 0 16px;
+}
+
+.contactos ul{
+    list-style: none;
+}
+
+.contactos li{
+    margin-bottom: 8px;
+}
+
+.Referencias{
+    margin-bottom: 16px;
+}
+
+/* Columna derecha*/
+.contenido-principal{
+    padding: 48px;
+    padding-top: 96px !important;
+    background-color: #fff;
+    position: relative;
+}
+
+.contenido-principal section{
+    position: relative;
+    margin-bottom: 48px;
+}
+
+/* Eliminamos el pseudo-elemento ::after anterior */
+.contenido-principal section::after {
+    display: none;
+}
+
+.contenido-principal h2{
+    color: #2c3e50;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.contenido-principal p,
+.contenido-principal li {
+    font-size: 16px;
+}
+
+.contenido-principal .Sobre-mi {
+    margin-top: 48px !important;
+    padding-top: 32px !important;
+}
+
+.sobre-mi{
+    border-top: none;
+    margin-top: 16px;
+    padding-top: 0;
+}
+
+.sobre-mi p{
+    padding: 8px 0;
+    line-height: 1.8;
+    color: #666;
+
+}
+
+.Educacion, .Habilidades, .Idiomas{
+    margin-top: 64px !important;
+    padding-top: 32px;
+    border-top: 5px solid #2c3e50;
+}
+
+section.Sobre-mi,
+section.sobre-mi {
+    margin-top: 48px !important;
+}
+
+/* Educación */
+.Educacion h3{
+    font-size: 14.4px;
+    color: #2c3e50;
+    margin-bottom: 17.6px;
+}
+
+.Educacion ul{
+    list-style: none;
+}
+
+.Educacion p{
+    color: #666;
+    font-size: 14.4px;
+}
+
+.Educacion li{
+    margin-bottom: 16px;
+}
+
+/* Habilidades */
+.Habilidades ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+}
+
+.Habilidades li{
+    color: #666;
+    font-size: 15.2px;
+    padding: 4.8px 0;
+}
+
+/* Idiomas */
+
+.Idiomas {
+    margin-top: 80px !important; /* Aumentamos el espacio superior */
+    padding-top: 40px;
+}
+
+.Idiomas ul{
+    list-style: none;
+}
+
+.Idiomas li{
+    color: #666;
+    font-size: 15.2px;
+    padding: 4.8px 0;
+}
