@@ -112,18 +112,15 @@ body {
     color: #555; /* Color uniforme */
 }
 
-.Habilidades{
+#Contenedor-Habilidades{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /*display: flex;
-    justify-content: space-between;*/
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
 }
 
-/*.Habilidades-tecnicas,
-.Habilidades-blandas{
-    width: 45%;
-}*/
+.Habilidades h2{
+    margin-bottom: 20px;
+}
 
 .Habilidades-tecnicas h3,
 .Habilidades-blandas h3 {
