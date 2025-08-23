@@ -58,6 +58,7 @@ body {
     margin-bottom: 20px; /* Ajustado */
 }
 
+/* Columna derecha */
 .contenido-principal {
     padding: 48px;
     background-color: #f6f9fc; /* Fondo más claro para destacar */
@@ -132,4 +133,45 @@ body {
 .Habilidades-tecnicas ul,
 .Habilidades-blandas ul{
     list-style: none;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #contenedor-cv {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+    #barra-lateral {
+        padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    }
+    .contenido-principal {
+        padding: 24px; /* Reducir el padding en pantallas pequeñas */
+    }
+    .perfil img {
+        width: 120px; /* Ajustar el tamaño de la imagen del perfil */
+        height: 120px;
+    }
+    .perfil h1 {
+        font-size: 20px; /* Ajustar el tamaño del título */
+    }
+    .contenido-principal h2 {
+        font-size: 18px; /* Ajustar el tamaño del subtítulo */
+    }
+    .contenido-principal p,
+    .contenido-principal li {
+        font-size: 14px; /* Ajustar el tamaño del texto */
+    }
+    .Educacion h3,
+    .Habilidades h3,
+    .Idiomas h3,
+    .Experiencia h3 {
+        font-size: 14px; /* Ajustar el tamaño de los subtítulos */
+    }
+    .Educacion p,
+    .Habilidades li,
+    .Idiomas li {
+        font-size: 14px; /* Ajustar el tamaño del texto */
+    }
+    #Contenedor-Habilidades {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
 }
